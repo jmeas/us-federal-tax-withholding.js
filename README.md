@@ -10,10 +10,18 @@ This library is most easily installed using `npm`.
 
 ### Accuracy
 
-This algorithm should be reasonably accurate. For my payroll it is within a dollar amount. The
-reason for inaccuracies is that the IRS does not require that your company use any particular formula.
-Rather, they provide an acceptable error range in addition to formulas for calculating withheld taxes.
-The acceptable error depends on the amount that you earn.
+This library should be reasonably accurate. For my payroll it is within a dollar amount. There are a
+number of reasons that may contribute to innacuracies.
+
+The first is that the IRS does not require that your company use any particular formula. Rather, they
+provide an acceptable error range in addition to formulas for calculating withheld taxes. The acceptable
+error depends on the amount that you earn.
+
+Another cause of inaccuracy is that they also permit rounding. For instance, `$12.30` can be rounded down
+to `$12`, and `$56.98` can be rounded up to `$57.00`.
+
+Because employees typically do not have access to the algorithm used by their employee, it is difficult
+to increase the accuracy of this library.
 
 ### Algorithm
 
@@ -44,8 +52,14 @@ Default: `false`
 
 Whether or not you are married.
 
+##### 'exemptions'  
+Type: `number`  
+Default: `0`
+
+The number of exemptions you claimed. This is reported on each pay stub.
+
 ##### 'payroll'  
 Type: `String`  
 Default: `biweekly`
 
-The type of payroll that you are on.
+The type of payroll that you are on. There are six types, based on the frequency of pay.

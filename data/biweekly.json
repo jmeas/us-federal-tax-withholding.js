@@ -1,0 +1,56 @@
+{
+  "exemptionValue": 153.80,
+  "single": [
+    {
+      "min": 0,
+      "max": 88,
+      "subtract": 0.00,
+      "times": 0.00
+    },
+    {
+      "min": 88,
+      "max": 443,
+      "subtract": 88.00,
+      "times": 0.10
+    },
+    {
+      "min": 443,
+      "max": 1529,
+      "subtract": 206.33,
+      "times": 0.15
+    },
+    {
+      "min": 1529,
+      "max": 3579,
+      "subtract": 735.40,
+      "times": 0.25
+    },
+    {
+      "min": 3579,
+      "max": 7369,
+      "subtract": 1040.07,
+      "times": 0.28
+    },
+    {
+      "min": 7369,
+      "max": 15915,
+      "subtract": 1999.00,
+      "times": 0.33
+    },
+    {
+      "min": 15915,
+      "max": 15981,
+      "subtract": 2794.20,
+      "times": 0.35
+    },
+    {
+      "min": 15981,
+      "max": "null",
+      "subtract": 4326.00,
+      "times": 0.396
+    }
+  ],
+  "married": [
+
+  ]
+}
